@@ -18,6 +18,7 @@ export const fetchNewUser = async (dispatch, newUser, lastId) => {
             .post('https://jsonplaceholder.typicode.com/users', {json: newUser})
             .json();
         dispatch(addNewUser({...res, id: lastId}));
+        dispatch(openModalWindow(''));
     } catch (err) {
         alert('Щось пішло не так(((')
     }
