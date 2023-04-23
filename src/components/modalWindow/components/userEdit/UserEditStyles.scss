@@ -1,0 +1,61 @@
+.userEdit {
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 225, 225, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+
+    &_title {
+        font-size: 29px;
+        font-weight: 500;
+    }
+
+    &_item {
+        display: flex;
+        align-items: center;
+        
+        p {
+            font-size: 25px;
+            white-space: nowrap;
+            margin-right: 10px;
+        }
+        input {
+            width: 100%;
+            text-align: center;
+            background-color: rgba(255, 225, 225, 0.4);
+            border-radius: 10px;
+            margin: 5px;
+            font-size: 25px;
+            font-weight: 300;
+            padding: 0 10px;
+            
+            &::placeholder {
+                color: rgba(77, 77, 77, 0.5);
+                font-weight: 400;
+            }
+        }
+    }
+    &_changedValue {
+        font-weight: 600 !important;
+    }
+
+    &_buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    &_buttonCancel {
+        background-color: rgb(255, 36, 36);
+        padding: 5px 10px;
+        margin-right: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    &_buttonSave {
+        background-color: rgb(54, 255, 36);
+        padding: 5px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
